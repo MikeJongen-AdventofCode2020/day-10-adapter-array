@@ -1,0 +1,13 @@
+name: day-10-adapter-array
+version: 0.1.0
+
+authors:
+  - your-name-here <your-email-here>
+
+targets:
+  day-10-adapter-array:
+    main: src/day-10-adapter-array.cr
+
+crystal: 0.35.1
+
+license: MIT
