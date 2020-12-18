@@ -1,6 +1,27 @@
-# TODO: Write documentation for `Day::10::Adapter::Array`
-module Day::10::Adapter::Array
-  VERSION = "0.1.0"
+require "option_parser"
+require "benchmark"
+require "string_scanner"
 
-  # TODO: Put your code here
+file_name = ""
+benchmark = false
+
+PREAMBLE = 25
+
+OptionParser.parse do |parser|
+  parser.banner = "Welcome to Report Repair"
+
+  parser.on "-f FILE", "--file=FILE", "Input file" do |file|
+    file_name = file
+  end
+  parser.on "-b", "--benchmark", "Measure benchmarks" do
+    benchmark = true
+  end
+  parser.on "-h", "--help", "Show help" do
+    puts parser
+    exit
+  end
 end
+
+unless file_name.empty?
+end
+
